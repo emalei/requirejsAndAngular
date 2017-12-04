@@ -12,7 +12,7 @@ var JECT="adviser_mobileservice",
     history = require('connect-history-api-fallback'),
 	gulp=require("gulp");
     
-gulp.task("build-js",function(){//压缩js
+gulp.task("build-js",function(){//压缩js  
 	gulp.src([SRC+"/2.0/views/**/*.js"])
 	.pipe(uglify({
 		 mangle:false // 是否修改变量名
