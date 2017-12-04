@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <base href="/">
+</head>
+<body class="m-fs24">
+	<div ui-view></div>
+</body>
+	<script type="text/javascript">
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			var reScripe = document.createElement("script");
+   			reScripe.src = "js/lib/requirejs/require.js";
+   			reScripe.setAttribute("data-main","js/main.js");
+   			document.body.appendChild(reScripe);
+   		});
+   		var reScripe = document.createElement("script");
+   			reScripe.src = "js/lib/requirejs/require.js";
+   			reScripe.setAttribute("data-main","js/main.js");
+   			document.body.appendChild(reScripe);
+    </script>
+</html>
